@@ -1,56 +1,61 @@
-# compiled output
-/dist
-/node_modules
-/build
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# NestJS Build
+dist/
+.cache/
+.cache-loader/
+*.tsbuildinfo
+
+# Environment Variables
+.env
+.env.*.local
+
+# IDE ve Editör Dosyaları
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS (İşletim Sistemi) Dosyaları
+.DS_Store
+Thumbs.db
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
-# OS
-.DS_Store
+# Test Çıktıları
+coverage/
+jest/
+*.lcov
 
-# Tests
-/coverage
-/.nyc_output
+# Dokümantasyon
+*.docx
+*.pdf
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Tür Kontrol ve Build Araçları
+*.d.ts
+*.map
+*.bak
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Docker
+docker-compose.override.yml
+docker-compose.override.yaml
+.dockerignore
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+# Yarn & PM2
+.pids
+.yarn-integrity
+pm2.pid
 
-# temp directory
-.temp
-.tmp
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+# Temp Files
+tmp/
